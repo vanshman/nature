@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG WITH PHOTOS</title>
+    <style>
+        body {
+            background: linear-gradient(130deg, rgb(181, 235, 126), rgb(147, 235, 84), rgb(115, 223, 38), rgb(92, 184, 26), rgb(69, 145, 14), darkgreen);
+            font-family: cursive;
+            text-align: center;
+        }
+
+        img {
+            height: 400px;
+            width: 500px;
+            margin-right: 25px;
+            margin-bottom: 0;
+        }
+        #image-section{
+            display: flexbox;
+            justify-content: center;
+        }
+        #section-style{
+            margin-left: 95px;
+            margin-right: 95px;
+            margin-bottom: 20px;
+            background-color: white;
+            width: 500px;
+            float: left;
+        }
+        div{
+            margin-top: 15px;
+        }
+        p{
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+        <h1>Hello, welcome to the wonderful world of Photography</h1>
+        <br><br>
+        <h4 id="date"></h4>
+        <div id="image-section">
+            <div id="section-style">
+                <img src="https://expertphotography.com/wp-content/uploads/2020/05/Nature-Photographer-Marco-Grassi.png">
+                <p>In nature, nothing is perfect and everything is perfect. Trees can be contorted, bent in weird ways, and they’re still beautiful. –Alice Walker</p>
+            </div>
+            <div id="section-style">
+                <img src="https://expertphotography.com/wp-content/uploads/2020/05/Nature-photographer-Guy-Tal.jpg">
+                <p>Forget not that the earth delights to feel your bare feet and the winds long to play with your hair. —Khalil Gibran</p>
+            </div>
+            <div id="section-style">
+                <img src="https://expertphotography.com/wp-content/uploads/2020/05/Nature-Photographers-CathSimard.jpg">
+                <p>Look deep into nature, and then you will understand everything better. —Albert Einstein</p>
+            </div>
+            <div id="section-style">
+                <img src="https://expertphotography.com/wp-content/uploads/2020/05/outdoor-photographer-3-simonebramante.jpg">
+                <p>By discovering nature, you discover yourself. - Maxime Lagacé</p>
+            </div>
+        </div>
+        <script>
+            var date = new Date().toDateString();
+            document.getElementById("date").innerHTML = date;
+        </script>
+</body>
+
+</html>
